@@ -21,6 +21,10 @@ public class Humain {
 		return argent;
 	}
 
+	public void setArgent(int argent) {
+		this.argent = argent;
+	}
+
 	public void direBonjour() {
 		System.out.println(parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boissonPref + "."));
 	}
@@ -49,7 +53,7 @@ public class Humain {
 		argent -= perte;
 	}
 
-	private String parler(String texte) {
+	protected String parler(String texte) {
 		return "(" + nom + ") -" + texte;
 	}
 }
