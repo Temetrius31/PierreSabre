@@ -15,7 +15,7 @@ public class HistoireTP4 {
 		Commercant lizya = new Commercant("Lizya", 20);
 		lizya.direBonjour();
 		lizya.seFaireExtorquer();
-		lizya.recevoir(10);
+		lizya.recevoir(15);
 		lizya.boire();
 	}
 }
