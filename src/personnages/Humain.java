@@ -36,11 +36,11 @@ public class Humain {
 	public void acheter(String bien, int prix) {
 		if (argent < prix) {
 			System.out.println(parler("Je n'ai plus que " + argent
-					+ " sous en poche. Je ne peux même pas m'offrir un kimono à " + prix + " sous."));
+					+ " sous en poche. Je ne peux mÃªme pas m'offrir un kimono Ã  " + prix + " sous."));
 		} else {
 			int argentAvant = argent;
 			perdreArgent(prix);
-			System.out.println(parler("J'ai " + argentAvant + " sous en poche. Je vais pouvoir m'offrir " + bien + " à "
+			System.out.println(parler("J'ai " + argentAvant + " sous en poche. Je vais pouvoir m'offrir " + bien + " Ã  "
 					+ prix + " sous"));
 		}
 	}
@@ -54,6 +54,6 @@ public class Humain {
 	}
 
 	protected String parler(String texte) {
-		return "(" + nom + ") -" + texte;
+		return "(" + nom + ")-" + texte;
 	}
 }
