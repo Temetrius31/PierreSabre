@@ -29,6 +29,10 @@ public class Humain {
 		this.argent = argent;
 	}
 
+	public String getBoissonPref() {
+		return boissonPref;
+	}
+
 	public void direBonjour() {
 		System.out.println(parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boissonPref + "."));
 	}
